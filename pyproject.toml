@@ -5,8 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "automation-server-client",
+    "ldap3>=2.9.1",
+    "pytest>=8.4.1"
 ]
 
 [tool.uv.sources]
-automation-server-client = { git = "https://github.com/odense-rpa/automation-server-client.git", tag = "v0.2.1" }
+
