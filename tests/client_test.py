@@ -1,5 +1,5 @@
 import os
-from functionality.client import ActiveDirectoryClient
+from active_directory.client import ActiveDirectoryClient
 
 def test_active_directory_search():
     # Initialize the client with test parameters
