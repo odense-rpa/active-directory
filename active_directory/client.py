@@ -15,6 +15,6 @@ class ActiveDirectoryClient:
         self.connection = Connection(self.server, user=username, password=password, auto_bind=True)
         self.base_dn = base_dn
         
-    def search(self, search_base: str, search_filter: str, attributes: list):
-        self.connection.search(search_base, search_filter, attributes=attributes)
+    def search(self, search_filter: str, attributes: list):
+        self.connection.search(self.base_dn, search_filter, attributes=attributes)
         return self.connection.entries
